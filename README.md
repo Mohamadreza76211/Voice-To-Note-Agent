@@ -1,10 +1,3 @@
-خیلی عالی! پروژه‌ی تو یه اپلیکیشن React مبتنی بر Web Speech API هست که گفتار رو به متن تبدیل می‌کنه و دوباره همون متن رو به صورت صوتی می‌خونه. این یه قابلیت هوشمند و جالب برای پروژه‌های مدرن محسوب می‌شه.
-
-در ادامه یه README کامل و حرفه‌ای برای GitHub آماده کردم که شامل معرفی پروژه، امکانات، نحوه اجرا، پیش‌نمایش و نکات فنی هست:
-
----
-
-```markdown
 # 🎙️ Voice to Text Agent
 
 A simple, elegant, and fully client-side **React app** that converts your speech into text and then speaks it back to you using the **Web Speech API**.
