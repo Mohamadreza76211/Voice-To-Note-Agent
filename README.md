@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+خیلی عالی! پروژه‌ی تو یه اپلیکیشن React مبتنی بر Web Speech API هست که گفتار رو به متن تبدیل می‌کنه و دوباره همون متن رو به صورت صوتی می‌خونه. این یه قابلیت هوشمند و جالب برای پروژه‌های مدرن محسوب می‌شه.
 
-## Getting Started
+در ادامه یه README کامل و حرفه‌ای برای GitHub آماده کردم که شامل معرفی پروژه، امکانات، نحوه اجرا، پیش‌نمایش و نکات فنی هست:
 
-First, run the development server:
+---
+
+```markdown
+# 🎙️ Voice to Text Agent
+
+A simple, elegant, and fully client-side **React app** that converts your speech into text and then speaks it back to you using the **Web Speech API**.
+
+This project leverages `SpeechRecognition` for speech-to-text and `SpeechSynthesisUtterance` for text-to-speech — built entirely with modern React and TypeScript.
+
+---
+
+## 🚀 Features
+
+- 🎤 **Start/Stop voice recognition**
+- 📝 **Transcribes speech into text**
+- 🔊 **Reads back the transcribed text**
+- 🌐 **Supports English (en-US) language**
+- ⚛️ **Built with React 18, TypeScript & TailwindCSS**
+- 🎨 **Custom MUI Theme with Roboto Font**
+
+---
+
+## 🖥️ Demo
+
+![demo](https://user-images.githubusercontent.com/your-github/demo.gif)
+
+> Your speech will appear inside a styled textbox. Try saying something like “Hello world!” and the app will read it back to you.
+
+---
+
+## 📦 Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-username/voice-to-text-agent.git
+cd voice-to-text-agent
+npm install
+```
+
+---
+
+## ▶️ Usage
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```bash
+.
+├── app/
+│   └── layout.tsx       # Global layout with MUI ThemeProvider
+├── components/
+│   └── SpeechToText.tsx # Main component
+├── pages/
+│   └── index.tsx        # Home page rendering the component
+├── styles/
+│   └── globals.css      # Global Tailwind styles
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **React 18**
+- **Next.js App Router (client-side rendering)**
+- **TypeScript**
+- **Web Speech API**
+- **TailwindCSS**
+- **Material UI (with custom theme)**
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💡 Browser Support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> ⚠️ This app works best in **Chrome** and **Edge**. SpeechRecognition is not supported in Firefox or Safari.
+
+---
+
+## ❓ Known Issues
+
+- Some mobile browsers may have limited support.
+- Multiple clicks on “Start Listening” while already recording can throw errors (avoid spamming the button).
+
+---
+
+## 📜 License
+
+MIT License © 2025 [Your Name]
+
+---
+
+## 🌟 Feedback & Contribution
+
+Found a bug? Have a feature request? Feel free to open an issue or create a pull request. Contributions are welcome! 😊
